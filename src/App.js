@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import SimpleMenu from "./Menu";
-import CreateListArea from "./CreateListArea";
-import List from "./List";
-import CreateNoteArea from "./CreateNoteArea";
-import Note from "./Note";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import SimpleMenu from "./components/Menu";
+import CreateListArea from "./components/CreateListArea";
+import List from "./components/List";
+import CreateNoteArea from "./components/CreateNoteArea";
+import Note from "./components/Note";
 
 function App() {
 

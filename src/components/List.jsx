@@ -1,6 +1,7 @@
 import React from "react";
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 import ListItem from "./ListItem";
+import Grid from "@material-ui/core/Grid";
 
 function List(props) {
 
@@ -9,9 +10,9 @@ function List(props) {
   }
   
     return (
+      <Grid item xs={12} sm={12} md={6} lg={4}>
         <div className="post">
           <h1>{props.title}</h1>
-          
           <ul className="post-list-area">
               {props.content.map((listItem) => (
                 <div>
@@ -19,12 +20,11 @@ function List(props) {
                 </div>
               ))}
           </ul>
-
           <button onClick={handleClick}>
             <DeleteOutlineIcon />
           </button>
         </div>
-
+      </Grid>
     );
 };
 

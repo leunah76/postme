@@ -6,6 +6,7 @@ import CreateListArea from "./components/CreateListArea";
 import List from "./components/List";
 import CreateNoteArea from "./components/CreateNoteArea";
 import Note from "./components/Note";
+import Grid from "@material-ui/core/Grid";
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
            <CreateNoteArea 
            onAdd={addNote}/>}
 
+          <Grid container spacing={1} direction="row">
            {lists.map(function (list, index) {
              return (
                 <List 
@@ -80,7 +82,9 @@ function App() {
                 />
               )
             })}
+          </Grid>
 
+          <Grid container spacing={1} direction="row">
            {notes.map(function (note, index) {
               return (
                 <Note
@@ -91,7 +95,8 @@ function App() {
                  onDelete={deleteNote}
                  />
               )
-           })}
+            })}
+          </Grid>
 
         </div>
        <Footer />

@@ -70,7 +70,7 @@ function App() {
            <CreateNoteArea 
            onAdd={addNote}/>}
 
-          <Grid container spacing={1} direction="row">
+          <Grid container spacing={3} direction="row" justify="center">
            {lists.map(function (list, index) {
              return (
                 <List 
@@ -84,7 +84,7 @@ function App() {
             })}
           </Grid>
 
-          <Grid container spacing={1} direction="row">
+          <Grid container spacing={3} direction="row" justify="center">
            {notes.map(function (note, index) {
               return (
                 <Note

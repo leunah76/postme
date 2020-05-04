@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Grid from "@material-ui/core/Grid";
 
 function CreateListArea(props) {
  
@@ -74,7 +75,8 @@ function CreateListArea(props) {
   }
 
   return (
-    <div>
+    <Grid container justify="center">
+    <Grid item xs={12} sm={12} md={6} lg={5}>
       <form>
           <div >
               <div>
@@ -108,7 +110,8 @@ function CreateListArea(props) {
              </button>}
           
        </form>
-    </div>
+    </Grid>
+  </Grid>  
   );
 
 }

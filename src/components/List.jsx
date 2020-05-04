@@ -13,7 +13,7 @@ function List(props) {
       <Grid item xs={12} sm={12} md={6} lg={4}>
         <div className="post">
           <h1>{props.title}</h1>
-          <ul className="post-list-area">
+          <ul className="post-list-content">
               {props.content.map((listItem) => (
                 <div>
                     <ListItem text={listItem} />

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Grid from "@material-ui/core/Grid";
 
 function CreateNoteArea(props) {
     
@@ -33,7 +34,8 @@ function CreateNoteArea(props) {
     }
 
     return (
-      <div>
+      <Grid container justify="center">
+        <Grid item xs={12} sm={12} md={6} lg={5}>
           <form action="">             
               <input name="title" placeholder="Title" type="text"
               onChange={createNote}
@@ -48,7 +50,8 @@ function CreateNoteArea(props) {
                Post me
               </button>
           </form>
-      </div>
+        </Grid>
+      </Grid>  
 
     )
 

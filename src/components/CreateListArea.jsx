@@ -1,5 +1,14 @@
 import React, {useState} from "react";
 import Grid from "@material-ui/core/Grid";
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  MuiThemeProvider,
+  Typography
+} from "@material-ui/core";
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 function CreateListArea(props) {
  
@@ -76,7 +85,9 @@ function CreateListArea(props) {
 
   return (
     <Grid container justify="center">
-    <Grid item xs={12} sm={12} md={6} lg={5}>
+    <Grid item xs={12} sm={12} md={12} lg={5}>
+    <MuiThemeProvider theme={theme}>
+    <Typography> 
       <form>
           <div >
               <div>
@@ -107,9 +118,10 @@ function CreateListArea(props) {
              <button className="submit-button" 
                onClick={submitList}
                >Post me
-             </button>}
-          
+             </button>} 
        </form>
+       </Typography> 
+       </MuiThemeProvider> 
     </Grid>
   </Grid>  
   );

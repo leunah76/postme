@@ -39,8 +39,9 @@ footer p {
 /* Menu component */
 
 .menu {
-  margin: 3% auto 3%;
+  margin: 5% auto 5%;
   text-align: center;
+  font-size: 2rem;
 }
 
 /* Note & List component */
@@ -58,11 +59,11 @@ footer p {
   line-height: 1.5;
 }
 .post h1 {
-  font-size: 1.1em;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 .post p {
-  font-size: 1.1em;
+  font-size: 1.5rem;
   
   margin-bottom: 10px;
   white-space: pre-wrap;
@@ -77,8 +78,8 @@ footer p {
   color: #fff;
   border: none;
   border-radius: 7px;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   outline: none;
 } 
@@ -88,6 +89,7 @@ footer p {
 }
 .post-list-item {
   line-height: 2;
+  
 }
 
 /* Create Note Area */
@@ -95,7 +97,7 @@ footer p {
 form {
   position: relative;
   width: 100%;
-  margin: 30px auto 90px auto;
+  margin: 0 auto 90px auto;
   background: #fff;
   padding: 20px;
   border-radius: 7px;
@@ -107,7 +109,7 @@ form textarea {
   border: none;
   padding: 4px;
   outline: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: inherit;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -122,14 +124,12 @@ form textarea {
   color: #fff;
   border: none;
   border-radius: 7px;
-  /* width: 80px;
-  height: 40px; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
   font-family: inherit;
   font-family: "McLaren", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 200;
   padding: 4px 10px;
 }
@@ -145,7 +145,7 @@ form textarea {
   border: solid 3px transparent;
   border-bottom: dashed 3px #fdcb6e;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: hsla(260, 2%, 25%, 0.7);
   width: 80%;
   margin-bottom: 20px;
@@ -155,7 +155,7 @@ form textarea {
   background-color: #fff;
   color: #06623b;
   font-family: inherit;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   border: solid 1.5px #06623b;
   border-radius: 7px;
@@ -169,7 +169,7 @@ form textarea {
 
 .lists {
   color: hsla(260, 2%, 25%, 0.7);
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: inherit;
   line-height: 2;
 }
@@ -178,7 +178,7 @@ form textarea {
   background-color: #fff;
   color: #06623b;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   border: solid 1.5px #06623b;
   border-radius: 7px;

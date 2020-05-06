@@ -51,17 +51,19 @@ footer p {
   box-shadow: 0 2px 5px #ccc;
   display: inline;
   padding: 20px;
-  width: 400px;
-  margin: 16px;
+  width: 100%;
+
   float: left;
   text-align: justify;
+  line-height: 1.5;
 }
 .post h1 {
   font-size: 1.1em;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
 .post p {
   font-size: 1.1em;
+  
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -79,13 +81,11 @@ footer p {
   height: 36px;
   cursor: pointer;
   outline: none;
-
 } 
 
-.post-list-area {
+.post-list-content {
   padding-left: 20px;
 }
-
 .post-list-item {
   line-height: 2;
 }
@@ -94,8 +94,8 @@ footer p {
 
 form {
   position: relative;
-  width: 500px;
-  margin: 30px auto 20px auto;
+  width: 100%;
+  margin: 30px auto 90px auto;
   background: #fff;
   padding: 20px;
   border-radius: 7px;
@@ -109,6 +109,8 @@ form textarea {
   outline: none;
   font-size: 1.2rem;
   font-family: inherit;
+  line-height: 1.5;
+  margin-bottom: 20px;
   resize: none;
 }
 
@@ -120,14 +122,16 @@ form textarea {
   color: #fff;
   border: none;
   border-radius: 7px;
-  width: 80px;
-  height: 40px;
+  /* width: 80px;
+  height: 40px; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
   font-family: inherit;
   font-family: "McLaren", cursive;
+  font-size: 1.5rem;
   font-weight: 200;
+  padding: 4px 10px;
 }
 
 /* Create List Area */
@@ -151,12 +155,12 @@ form textarea {
   background-color: #fff;
   color: #06623b;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   border: solid 1.5px #06623b;
   border-radius: 7px;
-  margin: 10px;
-  padding: 2px 4px;
+  margin: 20px;
+  padding: 0 8px;
 }
 
 .list-area {
@@ -167,16 +171,17 @@ form textarea {
   color: hsla(260, 2%, 25%, 0.7);
   font-size: 1.2rem;
   font-family: inherit;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .confirm-button {
   background-color: #fff;
   color: #06623b;
   font-family: inherit;
+  font-size: 1.2rem;
   font-weight: bold;
   border: solid 1.5px #06623b;
   border-radius: 7px;
-  margin-top: 10px;
-  padding: 4px;
+  margin-top: 20px;
+  padding: 4px 8px;
 }

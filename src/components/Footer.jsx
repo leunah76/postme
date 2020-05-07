@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  createMuiTheme,
-  responsiveFontSizes,
-  MuiThemeProvider,
-  Typography
-} from "@material-ui/core";
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 
 function Footer() {
 
@@ -15,13 +7,9 @@ function Footer() {
     const year = day.getFullYear();
 
     return (
-      <MuiThemeProvider theme={theme}>
-        <Typography variant="inherit" gutterBottom>
           <footer>
-            <p>Copyright © {year}</p>
+            <h3>Copyright © {year}</h3>
           </footer>
-        </Typography>
-      </MuiThemeProvider>  
     );
 };
 

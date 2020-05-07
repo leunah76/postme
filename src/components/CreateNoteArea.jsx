@@ -1,14 +1,6 @@
 import React, {useState} from "react";
 import Grid from "@material-ui/core/Grid";
-import {
-    createMuiTheme,
-    responsiveFontSizes,
-    MuiThemeProvider,
-    Typography
-} from "@material-ui/core";
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 
 function CreateNoteArea(props) {
     
@@ -46,24 +38,22 @@ function CreateNoteArea(props) {
         
       <Grid container justify="center">
         <Grid item xs={12} sm={12} md={12} lg={5}>
-         <MuiThemeProvider theme={theme}>
-          <Typography> 
-            <form>      
+          <form>  
               <input name="title" placeholder="Title" type="text"
-              onChange={createNote}
-              value={newNote.title}/>        
+                onChange={createNote}
+                value={newNote.title}
+              />    
               <textarea name="content" placeholder="Contents" cols="30" 
-              onClick={expand}
-              rows={isExpanded ? "5" : "1"}
-              onChange={createNote}
-              value={newNote.content}></textarea>
+                onClick={expand}
+                rows={isExpanded ? "5" : "1"}
+                onChange={createNote}
+                value={newNote.content}>
+              </textarea>
               <button className="submit-button"
-               onClick={submitNote}>
-               Post me 
+                 onClick={submitNote}>
+                 Post me 
               </button>
-            </form>
-          </Typography> 
-         </MuiThemeProvider>
+          </form>
        </Grid>
      </Grid>  
       
